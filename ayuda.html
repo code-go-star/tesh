@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+    <title>Recursos Educativos</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9, #001f3f);
+    background-size: 100% 200%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        header {
+            background-color: #030151ae;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #292828;
+        }
+        .temario {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+        .ejemplo {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+        .resultado {
+            background: #a2a8c6d5;
+            padding: 10px;
+            border: 1px solid #000000;
+            margin-top: 10px;
+        }
+        .video {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Estructura de Datos <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./assets/avatars/mundo.png" alt="UserIcon">
+					<figcaption class="text-center text-titles"></figcaption>
+				</figure>
+				
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+                <li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Temario <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="tema1.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 1</a>
+						</li>
+                        <li>
+							<a href="tema2.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 2</a>
+						</li>
+                        <li>
+							<a href="tema3.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 3</a>
+						</li>
+                        <li>
+							<a href="tema4.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 4</a>
+						</li>
+                        <li>
+							<a href="tema5.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 5</a>
+						</li>
+                        <li>
+							<a href="tema6.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 6</a>
+						</li>
+					</ul>
+				</li>	
+				
+				
+			</ul>
+		</div>
+	</section>
+    <!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				
+			</ul>
+		</nav>
+    <header>
+        <h1>Recursos Educativos</h1>
+      
+    </header>
+    <div class="container">
+        <section class="temario">
+            <h2>Tema 1: Introducción a las estructuras de datos</h2>
+            <p><strong>Páginas:</strong></p>
+            <ul>
+                <li><a href="https://servicetec.es/listas-y-matrices-en-java-una-guia-completa/" target="_blank">Listas y matrices en Java - ServiceTec</a></li>
+                <li><a href="https://studylib.es/doc/9458660/estructuras-de-datos-en-java--4ta-edici%C3%B3n---mark-allen-weiss" target="_blank">Estructuras de datos en Java - StudyLib</a></li>
+                <li><a href="https://www.grycap.upv.es/gmolto/docs/eda/EDA_Tema_1_gmolto.pdf" target="_blank">Estructuras de datos - UPV</a></li>
+            </ul>
+        
+            <h2>Tema 2: Recursividad</h2>
+            <p><strong>Páginas:</strong></p>
+            <ul>
+                <li><a href="https://amsoft.medium.com/explorando-la-recursividad-en-java-con-ejemplos-pr%C3%A1cticos-b7d5f22302f2" target="_blank">Explorando la recursividad en Java - AMSoft</a></li>
+                <li><a href="https://www.tutorialesprogramacionya.com/javaya/detalleconcepto.php?codigo=123&punto=&inicio=40" target="_blank">Recursividad en Java - Tutoriales Programación Ya</a></li>
+                <li><a href="https://www.tokioschool.com/noticias/recursividad-programacion-java/" target="_blank">Recursividad en programación Java - Tokio School</a></li>
+            </ul>
+        
+            <h2>Tema 3: Estructuras lineales</h2>
+            <p><strong>Páginas:</strong></p>
+            <ul>
+                <li><a href="https://www.ctr.unican.es/asignaturas/eda/cap2-lineales-2en1.pdf" target="_blank">Capítulo 2: Estructuras lineales - UNICAN</a></li>
+                <li><a href="https://www.tokioschool.com/noticias/estructura-datos-java/" target="_blank">Estructuras de datos en Java - Tokio School</a></li>
+                <li><a href="https://es.scribd.com/document/104956666/Estructuras-Lineales-Java" target="_blank">Estructuras lineales en Java - Scribd</a></li>
+            </ul>
+        
+            <h2>Tema 4: Estructuras no lineales</h2>
+            <p><strong>Páginas:</strong></p>
+            <ul>
+                <li><a href="https://blog.soyhenry.com/que-es-una-estructura-de-datos-en-programacion/#:~:text=Las%20estructuras%20de%20datos%20no,%C3%81rboles" target="_blank">Estructuras de datos no lineales - SoyHenry</a></li>
+                <li><a href="https://www.studocu.com/es-mx/document/centro-nacional-de-investigacion-y-desarrollo-tecnologico/dinamica-avanzada/estructuras-no-lineales/10513897" target="_blank">Estructuras no lineales - Studocu</a></li>
+                <li><a href="https://es.scribd.com/document/648367498/Estructuras-no-lineales" target="_blank">Estructuras no lineales - Scribd</a></li>
+            </ul>
+        
+            <h2>Tema 5: Métodos de ordenamiento</h2>
+            <p><strong>Páginas:</strong></p>
+            <ul>
+                <li><a href="https://javajhon.blogspot.com/2020/11/ordenamiento.html" target="_blank">Métodos de ordenamiento - JavaJhon</a></li>
+                <li><a href="https://es.stackoverflow.com/questions/397957/algoritmo-de-ordenamiento" target="_blank">Algoritmo de ordenamiento - StackOverflow</a></li>
+                <li><a href="https://gl-epn-programacion-ii.blogspot.com/2010/06/metodos-de-ordenamiento.html" target="_blank">Métodos de ordenamiento - EPN</a></li>
+            </ul>
+        
+            <h2>Tema 6: Métodos de búsqueda</h2>
+            <p><strong>Páginas:</strong></p>
+            <ul>
+                <li><a href="https://codegym.cc/es/groups/posts/es.394.busqueda-binaria-en-java-colecciones-recursivas-iterativas-y-java" target="_blank">Búsqueda binaria en Java - CodeGym</a></li>
+                <li><a href="https://www.ibm.com/docs/es/dmrt/9.5?topic=concepts-java-search" target="_blank">Métodos de búsqueda en Java - IBM</a></li>
+                <li><a href="https://prezi.com/cecbhiyhy4ni/metodos-de-ordenamiento-y-busqueda-en-java/" target="_blank">Métodos de ordenamiento y búsqueda en Java - Prezi</a></li>
+            </ul>
+        </section>
+        
+
+      
+
+    </div>
+      <!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+    <title>Métodos de Búsqueda</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9, #001f3f);
+    background-size: 100% 200%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        header {
+            background-color: #030151ae;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #292828;
+        }
+        .temario {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+        .ejemplo {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+        .resultado {
+            background: #a2a8c6d5;
+            padding: 10px;
+            border: 1px solid #000000;
+            margin-top: 10px;
+        }
+        .video {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Estructura de Datos <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./assets/avatars/mundo.png" alt="UserIcon">
+					<figcaption class="text-center text-titles"></figcaption>
+				</figure>
+				
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+                <li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Temario <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="tema1.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 1</a>
+						</li>
+                        <li>
+							<a href="tema2.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 2</a>
+						</li>
+                        <li>
+							<a href="tema3.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 3</a>
+						</li>
+                        <li>
+							<a href="tema4.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 4</a>
+						</li>
+                        <li>
+							<a href="tema5.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 5</a>
+						</li>
+                        <li>
+							<a href="tema6.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 6</a>
+						</li>
+					</ul>
+				</li>	
+				
+				
+			</ul>
+		</div>
+	</section>
+    <!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				
+			</ul>
+		</nav>
+        <header> <h1>Métodos de Busqueda</h1> </header>
+		
+    <div class="container">
+        <section class="temario">
+            <h2>Temario</h2>
+            <p><strong>6 Métodos de búsqueda</strong></p>
+            
+            <p><strong>6.1 Búsqueda secuencial</strong></p>
+            <p>La búsqueda secuencial es un algoritmo simple en el que se verifica cada elemento de la lista uno por uno hasta que se encuentra el elemento deseado o se recorre toda la lista.</p>
+            
+            <p><strong>6.2 Búsqueda binaria</strong></p>
+            <p>La búsqueda binaria es un algoritmo eficiente que se utiliza en listas ordenadas. Divide repetidamente el intervalo de búsqueda a la mitad hasta encontrar el elemento deseado.</p>
+            
+            <p><strong>6.3 Búsqueda por funciones de hash</strong></p>
+            <p>La búsqueda por funciones de hash utiliza una función hash para mapear claves a ubicaciones específicas en una tabla hash, permitiendo un acceso rápido a los elementos.</p>
+        </section>
+
+        <section class="ejemplo">
+            <h2>Ejemplo en Java</h2>
+            <pre>
+<code>
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MetodosDeBusqueda {
+
+    // Búsqueda secuencial
+    public static int busquedaSecuencial(int[] arr, int x) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    // Búsqueda binaria
+    public static int busquedaBinaria(int[] arr, int x) {
+        int izquierda = 0, derecha = arr.length - 1;
+        while (izquierda <= derecha) {
+            int medio = izquierda + (derecha - izquierda) / 2;
+
+            if (arr[medio] == x)
+                return medio;
+            
+            if (arr[medio] < x)
+                izquierda = medio + 1;
+            else
+                derecha = medio - 1;
+        }
+        return -1;
+    }
+
+    // Búsqueda por funciones de hash
+    public static Integer busquedaHash(Map<Integer, Integer> hashMap, int x) {
+        return hashMap.get(x);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {2, 3, 4, 10, 40};
+        int x = 10;
+
+        // Búsqueda secuencial
+        int resultadoSecuencial = busquedaSecuencial(arr, x);
+        System.out.println("Búsqueda secuencial: Elemento encontrado en el índice " + resultadoSecuencial);
+
+        // Búsqueda binaria (requiere un arreglo ordenado)
+        int resultadoBinaria = busquedaBinaria(arr, x);
+        System.out.println("Búsqueda binaria: Elemento encontrado en el índice " + resultadoBinaria);
+
+        // Búsqueda por funciones de hash
+        Map<Integer, Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            hashMap.put(arr[i], i);
+        }
+        Integer resultadoHash = busquedaHash(hashMap, x);
+        System.out.println("Búsqueda por funciones de hash: Elemento encontrado en el índice " + resultadoHash);
+    }
+}
+</code>
+            </pre>
+            <div class="resultado">
+                <strong>Resultado esperado:</strong>
+                <pre>
+Búsqueda secuencial: Elemento encontrado en el índice 3
+Búsqueda binaria: Elemento encontrado en el índice 3
+Búsqueda por funciones de hash: Elemento encontrado en el índice 3
+                </pre>
+            </div>
+        </section>
+
+        <section class="video">
+            <h2>Video Relacionado</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BBno0J_GHTk?si=GRd8JQWDvSACS1Bp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </div>
+      <!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>

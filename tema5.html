@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+    <title>Métodos de Ordenamiento</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9, #001f3f);
+    background-size: 100% 200%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        header {
+            background-color: #030151ae;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #292828;
+        }
+        .temario {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+        .ejemplo {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+        .resultado {
+            background: #a2a8c6d5;
+            padding: 10px;
+            border: 1px solid #000000;
+            margin-top: 10px;
+        }
+        .video {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Estructura de Datos <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./assets/avatars/mundo.png" alt="UserIcon">
+					<figcaption class="text-center text-titles"></figcaption>
+				</figure>
+				
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+                <li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Temario <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="tema1.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 1</a>
+						</li>
+                        <li>
+							<a href="tema2.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 2</a>
+						</li>
+                        <li>
+							<a href="tema3.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 3</a>
+						</li>
+                        <li>
+							<a href="tema4.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 4</a>
+						</li>
+                        <li>
+							<a href="tema5.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 5</a>
+						</li>
+                        <li>
+							<a href="tema6.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 6</a>
+						</li>
+					</ul>
+				</li>	
+				
+				
+			</ul>
+		</div>
+	</section>
+    <!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				
+			</ul>
+		</nav>
+       
+        <header> <h1>Métodos de ordenamiento</h1> </header>
+    <div class="container">
+        <section class="temario">
+            <h2>Temario</h2>
+            <p><strong>5 Métodos de ordenamiento</strong></p>
+            
+            <p><strong>5.1 Algoritmos de ordenamiento internos</strong></p>
+            <ul>
+                <li>5.1.1 Burbuja</li>
+                <p>El método de ordenamiento burbuja es uno de los algoritmos de ordenamiento más simples. Compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto.</p>
+                <li>5.1.2 Quicksort</li>
+                <p>Quicksort es un algoritmo de ordenamiento eficiente que utiliza el principio de divide y vencerás. Divide el arreglo en subarreglos más pequeños y los ordena recursivamente.</p>
+                <li>5.1.3 ShellSort</li>
+                <p>ShellSort es una variante del ordenamiento por inserción que permite intercambiar elementos que están lejos unos de otros para reducir el número total de intercambios.</p>
+                <li>5.1.4 Radix</li>
+                <p>El ordenamiento Radix ordena números (o cadenas) considerando cada dígito o carácter en su valor posicional. Es eficiente para datos de longitud fija.</p>
+            </ul>
+
+            <p><strong>5.2 Algoritmos de ordenamiento externos</strong></p>
+            <ul>
+                <li>5.2.1 Intercalación</li>
+                <p>La intercalación es un método de ordenamiento externo que fusiona varios archivos ordenados en uno solo. Se usa comúnmente en la ordenación de grandes volúmenes de datos.</p>
+                <li>5.2.2 Mezcla Directa</li>
+                <p>La mezcla directa ordena los datos dividiéndolos en bloques pequeños, ordenando cada bloque y luego fusionándolos. Es útil cuando los datos no caben en memoria principal.</p>
+                <li>5.2.3 Mezcla Natural</li>
+                <p>La mezcla natural es una técnica que identifica subsecuelas ya ordenadas en los datos y las fusiona. Reduce la cantidad de pases necesarios para ordenar los datos.</p>
+            </ul>
+        </section>
+
+        <section class="ejemplo">
+            <h2>Ejemplo en Java</h2>
+            <pre>
+<code>
+import java.util.Arrays;
+
+public class MetodosDeOrdenamiento {
+
+    // Método de ordenamiento Burbuja
+    public static void burbuja(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n-i-1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+
+    // Método de ordenamiento Quicksort
+    public static void quicksort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quicksort(arr, low, pi-1);
+            quicksort(arr, pi+1, high);
+        }
+    }
+
+    private static int partition(int[] arr, int low, int high) {
+        int pivot = arr[high];
+        int i = (low-1);
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        int temp = arr[i+1];
+        arr[i+1] = arr[high];
+        arr[high] = temp;
+        return i+1;
+    }
+
+    // Método de ordenamiento ShellSort
+    public static void shellSort(int[] arr) {
+        int n = arr.length;
+        for (int gap = n/2; gap > 0; gap /= 2) {
+            for (int i = gap; i < n; i++) {
+                int temp = arr[i];
+                int j;
+                for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) {
+                    arr[j] = arr[j - gap];
+                }
+                arr[j] = temp;
+            }
+        }
+    }
+
+    // Método de ordenamiento Radix
+    public static void radixSort(int[] arr) {
+        int m = getMax(arr);
+        for (int exp = 1; m/exp > 0; exp *= 10) {
+            countSort(arr, exp);
+        }
+    }
+
+    private static void countSort(int[] arr, int exp) {
+        int n = arr.length;
+        int[] output = new int[n];
+        int[] count = new int[10];
+        Arrays.fill(count, 0);
+
+        for (int i = 0; i < n; i++) {
+            count[(arr[i] / exp) % 10]++;
+        }
+
+        for (int i = 1; i < 10; i++) {
+            count[i] += count[i - 1];
+        }
+
+        for (int i = n - 1; i >= 0; i--) {
+            output[count[(arr[i] / exp) % 10] - 1] = arr[i];
+            count[(arr[i] / exp) % 10]--;
+        }
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = output[i];
+        }
+    }
+
+    private static int getMax(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max)
+                max = arr[i];
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {170, 45, 75, 90, 802, 24, 2, 66};
+        System.out.println("Arreglo original: " + Arrays.toString(arr));
+
+        burbuja(arr);
+        System.out.println("Ordenado por Burbuja: " + Arrays.toString(arr));
+
+        int[] arr2 = {170, 45, 75, 90, 802, 24, 2, 66};
+        quicksort(arr2, 0, arr2.length - 1);
+        System.out.println("Ordenado por Quicksort: " + Arrays.toString(arr2));
+
+        int[] arr3 = {170, 45, 75, 90, 802, 24, 2, 66};
+        shellSort(arr3);
+        System.out.println("Ordenado por ShellSort: " + Arrays.toString(arr3));
+
+        int[] arr4 = {170, 45, 75, 90, 802, 24, 2, 66};
+        radixSort(arr4);
+        System.out.println("Ordenado por Radix: " + Arrays.toString(arr4));
+    }
+}
+</code>
+            </pre>
+            <div class="resultado">
+                <strong>Resultado esperado:</strong>
+                <pre>
+Arreglo original: [170, 45, 75, 90, 802, 24, 2, 66]
+Ordenado por Burbuja: [2, 24, 45, 66, 75, 90, 170, 802]
+Ordenado por Quicksort: [2, 24, 45, 66, 75, 90, 170, 802]
+Ordenado por ShellSort: [2, 24, 45, 66, 75, 90, 170, 802]
+Ordenado por Radix: [2, 24, 45, 66, 75, 90, 170, 802]
+                </pre>
+            </div>
+        </section>
+
+        <section class="video">
+            <h2>Video Relacionado</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d5tujF0y5TE?si=N8UUlPEzuGNQ3-zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </div>
+      <!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
+

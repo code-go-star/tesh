@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+    <title>Estructuras No Lineales</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9, #001f3f);
+    background-size: 100% 200%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        header {
+            background-color: #030151ae;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #292828;
+        }
+        .temario {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+        .ejemplo {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+        .resultado {
+            background: #a2a8c6d5;
+            padding: 10px;
+            border: 1px solid #000000;
+            margin-top: 10px;
+        }
+        .video {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Estructura de Datos <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./assets/avatars/mundo.png" alt="UserIcon">
+					<figcaption class="text-center text-titles"></figcaption>
+				</figure>
+				
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+                <li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Temario <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="tema1.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 1</a>
+						</li>
+                        <li>
+							<a href="tema2.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 2</a>
+						</li>
+                        <li>
+							<a href="tema3.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 3</a>
+						</li>
+                        <li>
+							<a href="tema4.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 4</a>
+						</li>
+                        <li>
+							<a href="tema5.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 5</a>
+						</li>
+                        <li>
+							<a href="tema6.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 6</a>
+						</li>
+					</ul>
+				</li>	
+				
+				
+			</ul>
+		</div>
+	</section>
+    <!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				
+			</ul>
+		</nav>
+        
+        <header> <h1>Estructuras no lineales</h1> </header>
+    <div class="container">
+        <section class="temario">
+            <h2>Temario</h2>
+            <p><strong>4. Estructuras no lineales</strong></p>
+            
+            <p><strong>4.1 Árboles</strong></p>
+            <ul>
+                <li>4.1.1 Clasificación de árboles</li>
+                <p>Los árboles se clasifican según su estructura y propiedades, como árboles binarios, árboles binarios de búsqueda, árboles balanceados, y más.</p>
+                <li>4.1.2 Operaciones básicas sobre árboles binarios</li>
+                <p>Incluyen inserción, eliminación, búsqueda, y recorrido (preorden, inorden, postorden).</p>
+                <li>4.1.3 Aplicaciones</li>
+                <p>Se utilizan en bases de datos, sistemas de archivos, algoritmos de búsqueda y más.</p>
+            </ul>
+
+            <p><strong>4.2 Grafos</strong></p>
+            <ul>
+                <li>4.2.1 Representación de grafos</li>
+                <p>Los grafos pueden representarse mediante matrices de adyacencia, listas de adyacencia o listas de incidencia.</p>
+                <li>4.2.2 Operaciones básicas</li>
+                <p>Incluyen la búsqueda en profundidad (DFS), búsqueda en anchura (BFS), y encontrar caminos mínimos.</p>
+            </ul>
+        </section>
+
+        <section class="ejemplo">
+            <h2>Ejemplo en Java</h2>
+            <pre>
+<code>
+public class ArbolBinario {
+    // Clase Nodo
+    static class Nodo {
+        int valor;
+        Nodo izquierdo, derecho;
+
+        public Nodo(int valor) {
+            this.valor = valor;
+            izquierdo = derecho = null;
+        }
+    }
+
+    // Raiz del árbol binario
+    Nodo raiz;
+
+    // Método para insertar un nuevo nodo
+    void insertar(int valor) {
+        raiz = insertarRec(raiz, valor);
+    }
+
+    // Función recursiva para insertar un nuevo nodo
+    Nodo insertarRec(Nodo raiz, int valor) {
+        if (raiz == null) {
+            raiz = new Nodo(valor);
+            return raiz;
+        }
+
+        if (valor < raiz.valor)
+            raiz.izquierdo = insertarRec(raiz.izquierdo, valor);
+        else if (valor > raiz.valor)
+            raiz.derecho = insertarRec(raiz.derecho, valor);
+
+        return raiz;
+    }
+
+    // Recorrido en preorden
+    void preOrden(Nodo raiz) {
+        if (raiz != null) {
+            System.out.print(raiz.valor + " ");
+            preOrden(raiz.izquierdo);
+            preOrden(raiz.derecho);
+        }
+    }
+
+    // Recorrido en inorden
+    void inOrden(Nodo raiz) {
+        if (raiz != null) {
+            inOrden(raiz.izquierdo);
+            System.out.print(raiz.valor + " ");
+            inOrden(raiz.derecho);
+        }
+    }
+
+    // Recorrido en postorden
+    void postOrden(Nodo raiz) {
+        if (raiz != null) {
+            postOrden(raiz.izquierdo);
+            postOrden(raiz.derecho);
+            System.out.print(raiz.valor + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        ArbolBinario arbol = new ArbolBinario();
+
+        /* Insertar elementos */
+        arbol.insertar(50);
+        arbol.insertar(30);
+        arbol.insertar(20);
+        arbol.insertar(40);
+        arbol.insertar(70);
+        arbol.insertar(60);
+        arbol.insertar(80);
+
+        System.out.print("Recorrido en preorden: ");
+        arbol.preOrden(arbol.raiz);
+        System.out.println();
+
+        System.out.print("Recorrido en inorden: ");
+        arbol.inOrden(arbol.raiz);
+        System.out.println();
+
+        System.out.print("Recorrido en postorden: ");
+        arbol.postOrden(arbol.raiz);
+        System.out.println();
+    }
+}
+</code>
+            </pre>
+            <div class="resultado">
+                <strong>Resultado esperado:</strong>
+                <pre>
+Recorrido en preorden: 50 30 20 40 70 60 80 
+Recorrido en inorden: 20 30 40 50 60 70 80 
+Recorrido en postorden: 20 40 30 60 80 70 50
+                </pre>
+            </div>
+        </section>
+
+        <section class="grafico">
+            <h2>Representación Gráfica del Árbol</h2>
+            <p>
+                 <pre>
+                50
+              /    \
+            30      70
+           /  \    /  \
+          20  40  60  80
+                </pre>
+            </p>
+        </section>
+
+        <section class="video">
+            <h2>Video Relacionado</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LncNL35qZlI?si=o0mDJOY-KxfBlTI_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </div>
+      <!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
+

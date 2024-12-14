@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+    <title>Estructura de Datos</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9, #001f3f);
+    background-size: 100% 200%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+        header {
+            background-color: #030151ae;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            color: #292828;
+        }
+        .temario {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+        .ejemplo {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+        .resultado {
+            background: #a2a8c6d5;
+            padding: 10px;
+            border: 1px solid #000000;
+            margin-top: 10px;
+        }
+        .video {
+            background: #a2a8c6d5;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <!-- SideBar -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--SideBar Title -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Estructura de Datos <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- SideBar User info -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./assets/avatars/mundo.png" alt="UserIcon">
+					<figcaption class="text-center text-titles"></figcaption>
+				</figure>
+				
+			</div>
+			<!-- SideBar Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+                <li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Temario <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="tema1.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 1</a>
+						</li>
+                        <li>
+							<a href="tema2.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 2</a>
+						</li>
+                        <li>
+							<a href="tema3.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 3</a>
+						</li>
+                        <li>
+							<a href="tema4.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 4</a>
+						</li>
+                        <li>
+							<a href="tema5.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 5</a>
+						</li>
+                        <li>
+							<a href="tema6.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Tema 6</a>
+						</li>
+					</ul>
+				</li>	
+				
+				
+			</ul>
+		</div>
+	</section>
+    <!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				
+			</ul>
+		</nav>
+        
+        <header> <h1>Introducción a las estructuras de datos</h1> </header>
+    <div class="container">
+        <section class="temario">
+            <h2>Temario</h2>
+            <p><strong>1. Introducción a las estructuras de datos</strong></p>
+            <p>Esta sección abarca los conceptos básicos y la importancia de las estructuras de datos en la informática. Aquí se introduce la clasificación general y se presentan ejemplos de tipos de datos abstractos.</p>
+            
+            <p><strong>2. Clasificación de las estructuras de datos</strong></p>
+            <p>Explicación sobre cómo se clasifican las estructuras de datos en lineales (listas, pilas, colas) y no lineales (árboles, grafos), con ejemplos y aplicaciones prácticas.</p>
+
+            <p><strong>3. Tipos de datos abstractos (TDA)</strong></p>
+            <p>Definición y ejemplos de TDA's como listas, pilas, y colas. Discusión sobre cómo se implementan y utilizan en diferentes contextos.</p>
+
+            <p><strong>4. Ejemplos de TDA's</strong></p>
+            <p>Análisis detallado de varios tipos de datos abstractos y sus implementaciones en lenguajes de programación comunes.</p>
+
+            <p><strong>5. Manejo de memoria</strong></p>
+            <ul>
+                <li>Memoria estática: Discussión sobre cómo se asigna y gestiona la memoria de forma estática.</li>
+                <li>Memoria dinámica: Introducción a la gestión dinámica de memoria y su importancia en la programación eficiente.</li>
+            </ul>
+
+            <p><strong>6. Análisis de algoritmos</strong></p>
+            <ul>
+                <li>Complejidad en el tiempo: Estudio de cómo medir y comparar la eficiencia temporal de los algoritmos.</li>
+                <li>Complejidad en el espacio: Análisis del uso de memoria por parte de los algoritmos y cómo optimizarlo.</li>
+                <li>Eficiencia de los algoritmos: Métodos para evaluar y mejorar la eficiencia de los algoritmos en términos de tiempo y espacio.</li>
+            </ul>
+        </section>
+
+        <section class="ejemplo">
+            <h2>Ejemplo en Java</h2>
+            <pre>
+<code>
+class Nodo {
+    constructor(valor) {
+        this.valor = valor;
+        this.siguiente = null;
+    }
+}
+
+class ListaEnlazada {
+    constructor() {
+        this.cabeza = null;
+    }
+
+    agregar(valor) {
+        const nuevoNodo = new Nodo(valor);
+        if (!this.cabeza) {
+            this.cabeza = nuevoNodo;
+        } else {
+            let actual = this.cabeza;
+            while (actual.siguiente) {
+                actual = actual.siguiente;
+            }
+            actual.siguiente = nuevoNodo;
+        }
+    }
+
+    imprimir() {
+        let actual = this.cabeza;
+        while (actual) {
+            console.log(actual.valor);
+            actual = actual.siguiente;
+        }
+    }
+}
+
+// Ejemplo de uso:
+const lista = new ListaEnlazada();
+lista.agregar(10);
+lista.agregar(20);
+lista.agregar(30);
+lista.imprimir(); // Debería imprimir: 10, 20, 30
+</code>
+            </pre>
+        </section>
+
+        <section class="video">
+            <h2>Video Relacionado</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bH5Gv_HWjd4?si=mthWj2VQLwbiLKhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </div>
+      <!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
